@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery-Chaining</title>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(document) .ready(function (){
+			$("button") .click(function () {
+				$("#pl") .css("color", "red") .slideUp(2000) .slideDown(2000);
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<p id="pl">jQuery is Fun!!!</p>
+	<button>Click me</button>
+
+</body>
+</html>
